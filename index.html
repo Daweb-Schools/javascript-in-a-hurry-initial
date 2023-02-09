@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Flash Course</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+        <div class="nav-left-side">
+          <svg
+            width="17"
+            height="26"
+            viewBox="0 0 17 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.309 2.90741C10.309 2.90741 4.29997 8.73841 2.526 13.9214C2.40313 14.2804 2.73267 14.6124 3.10045 14.5192L13.2394 11.9481C13.9358 11.7715 14.5723 12.3638 14.368 13.0525C12.9552 17.8149 8.62911 23.5897 8.62911 23.5897"
+              stroke="#A259FF"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a href="/">Javascript Flash Course</a>
+        </div>
+
+        <button id="open-nav-menu">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H15C15.4142 5.25 15.75 5.58579 15.75 6C15.75 6.41421 15.4142 6.75 15 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 18C3 17.5858 3.33579 17.25 3.75 17.25H15C15.4142 17.25 15.75 17.5858 15.75 18C15.75 18.4142 15.4142 18.75 15 18.75H3.75C3.33579 18.75 3 18.4142 3 18Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+
+        <div class="wrapper">
+          <ul>
+            <li>
+              <button id="close-nav-menu">
+                <svg
+                  width="47"
+                  height="47"
+                  viewBox="0 0 47 47"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.7505 11.7495L35.2505 35.2495"
+                    stroke="#A259FF"
+                    stroke-width="6"
+                  />
+                  <path
+                    d="M35.2502 11.7502L11.7502 35.2502"
+                    stroke="#A259FF"
+                    stroke-width="6"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li class="socials">
+              <p>Join our community</p>
+
+              <div>
+                <a href="#">
+                  <img
+                    src="./assets/socials/DiscordLogo.png"
+                    alt="Discord logo"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/socials/YoutubeLogo.png"
+                    alt="Youtube logo"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/socials/TwitterLogo.png"
+                    alt="Twitter logo"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/socials/InstagramLogo.png"
+                    alt="Instagram logo"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="container greeting-section">
+        <div class="left-side">
+          <h1 id="greeting">Good Morning!</h1>
+          <p id="weather">The weather is cloudy in London and it's 22°C outside. </p>
+          <div class="weather-group">
+            <input
+              type="radio"
+              checked="true"
+              id="celsius"
+              name="temperature"
+            />
+            <label for="celsius">Celsius</label>
+            <input type="radio" id="fahr" name="temperature" />
+            <label for="fahr">Fahr</label>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <p>Local time:</p>
+          <div class="local-time">
+            <div class="time-holder">
+              <span data-time="hours" class="time-number">08</span>
+              <span class="time-letter">Hours</span>
+            </div>
+            <span class="time-divider">:</span>
+            <div class="time-holder">
+              <span data-time="minutes" class="time-number">25</span>
+              <span class="time-letter">mins</span>
+            </div>
+            <span class="time-divider">:</span>
+            <div class="time-holder">
+              <span data-time="seconds" class="time-number">13</span>
+              <span class="time-letter">secs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <img src="/assets/gallery/image1.jpg" alt="image 1" />
+
+        <div class="thumbnails">
+          <img src="./assets/gallery/image1.jpg" alt="Thumbnail Image 1" data-array-index="0" data-selected="true">
+          <img src="./assets/gallery/image2.jpg" alt="Thumbnail Image 2" data-array-index="1" data-selected="false">
+          <img src="./assets/gallery/image3.jpg" alt="Thumbnail Image 3" data-array-index="2" data-selected="false">
+        </div>
+      </section>
+
+      <section id="products" class="container products-section">
+        <div class="products-filter">
+          <input type="radio" checked="true" id="all" name="products" />
+          <label for="all">
+            All
+            <span class="product-amount">3</span>
+          </label>
+          <input type="radio" id="paid" name="products" />
+          <label for="paid">
+            Paid
+            <span class="product-amount">2</span>
+          </label>
+          <input type="radio" id="free" name="products" />
+          <label for="free">
+            Free
+            <span class="product-amount">1</span>
+          </label>
+
+          <span class="glider"></span>
+        </div>
+
+        <div class="products-area">
+          <div class="product-item">
+             <img src="./assets/products/img6.png" alt="AstroFiction">
+             <div class="product-details">
+                <h3 class="product-title">AstroFiction</h3>
+                <p class="product-author">John Doe</p>
+                <p class="price-title">Price</p>
+                <p class="product-price">$ 49.90</p>
+             </div>
+          </div>
+          <div class="product-item">
+             <img src="./assets/products/img1.png" alt="Space Odissey">
+             <div class="product-details">
+                <h3 class="product-title">Space Odissey</h3>
+                <p class="product-author">Marie Anne</p>
+                <p class="price-title">Price</p>
+                <p class="product-price">$ 35.00</p>
+             </div>
+          </div>
+          <div class="product-item">
+             <img src="./assets/products/img2.png" alt="Doomed City">
+             <div class="product-details">
+                <h3 class="product-title">Doomed City</h3>
+                <p class="product-author">Jason Cobert</p>
+                <p class="price-title">Price</p>
+                <p class="product-price">Free</p>
+             </div>
+          </div>
+          
+       </div>
+
+      </section>
+
+      <section id="faqs" class="container faqs-section">
+        <h3>Frequently Asked Questions</h3>
+
+        <details open>
+          <summary>FAQ 1</summary>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+            adipisci illum error, hic expedita numquam impedit explicabo vitae
+            iure quae vero autem quia quibusdam tempora atque harum perferendis
+            praesentium dolor!
+          </p>
+        </details>
+
+        <details>
+          <summary>FAQ 2</summary>
+
+          <p>
+            Consequuntur earum pariatur dolorem repellat temporibus ducimus sunt
+            suscipit repudiandae cupiditate in accusantium recusandae tempora
+            sint eligendi, perferendis aspernatur architecto voluptas laborum
+            adipisci neque voluptates consequatur.
+          </p>
+        </details>
+
+        <details>
+          <summary>FAQ 3</summary>
+
+          <p>
+            Consequuntur earum pariatur dolorem repellat temporibus ducimus sunt
+            suscipit repudiandae cupiditate in accusantium recusandae tempora
+            sint eligendi, perferendis aspernatur architecto voluptas laborum
+            adipisci neque voluptates consequatur.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <footer></footer>
+
+  </body>
+</html>

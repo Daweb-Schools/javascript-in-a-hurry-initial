@@ -1,0 +1,14 @@
+[
+    {
+      src: "./assets/gallery/image1.jpg",
+      alt: "Image 1"
+    },
+    {
+      src: "./assets/gallery/image2.jpg",
+      alt: "Image 2"
+    },
+    {
+      src: "./assets/gallery/image3.jpg",
+      alt: "Image 3"
+    }
+  ]
